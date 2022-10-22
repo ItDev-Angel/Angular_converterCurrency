@@ -1,0 +1,24 @@
+<h1>Converter Currency</h1>
+<div class="wrapper">
+  <div class="main-container">
+    <div class="selection-container">
+      <select #c1 name="" id="country1" (mouseleave)="changebase(c1.value)">
+        <option value="USD">Us USD</option>
+        <option value="UAH">Us UAH</option>
+        <option value="EUR">Us EUR</option>
+      </select>
+      <p>to</p>
+      <select #c2 name="" id="country1" (mouseleave)="tocountry(c2.value)">
+        <option value="USD">Us USD</option>
+        <option value="UAH">Us UAH</option>
+        <option value="EUR">Us EUR</option>
+      </select>
+    </div>
+    <button (click)="convert()">Submit</button>
+    <div class="result-container">
+      <p>1 {{base}}</p>
+      <p>=</p>
+      <p>{{result}} {{cont2}}</p>
+    </div>
+  </div>
+</div>

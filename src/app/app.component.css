@@ -1,0 +1,101 @@
+.wrapper,
+.main-container,
+.selection-container,
+.result-container {
+  display: flex;
+}
+
+.wrapper,
+.main-container {
+  justify-content: center;
+}
+
+.wrapper,
+.main-container,
+.selection-container {
+  align-items: center;
+}
+
+.wrapper {
+  height: 220px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-container,
+.result-container,
+select,
+button {
+  border-radius: 20px;
+}
+
+.main-container,
+button {
+  background: #000;
+}
+
+button,
+p {
+  color: #fff;
+  font-size: 20px;
+}
+
+p,
+select,
+option {
+  font-weight: 700;
+}
+
+.main-container {
+  width: 300px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.selection-container,
+.result-container {
+  justify-content: space-evenly;
+}
+
+.selection-container {
+  width: 100%;
+}
+
+select,
+button:hover {
+  border: none;
+}
+
+select {
+  font-size: 17px;
+  padding: 5px;
+  height: 30px;
+}
+
+select:focus {
+  outline: none;
+}
+
+button,
+.result-container {
+  padding: 10px;
+}
+
+button {
+  border: 2px solid #fff;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.result-container {
+  background: gray;
+  margin: 10px;
+  width: 220px;
+}
